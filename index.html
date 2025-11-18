@@ -8,18 +8,23 @@
   <body>
     <header>
       <nav>
-        <a href="#">
+        <a href="/">
           <img src="./images/logo.svg" alt="Логотип Сучасної пекарні" />
         </a>
         <!-- Якірні посилання на блоки лендінгу: -->
         <ul>
-          <li><a href="#traditions">Наші традиції</a></li>
-          <li><a href="#chefs">Шеф-кухарі</a></li>
-          <li><a href="#formats">Формати</a></li>
-          <li><a href="#feedback">Контакти</a></li>
+          <li><a href="#traditions-section">Наші традиції</a></li>
+          <li><a href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a href="#formats-section">Формати</a></li>
+          <li><a href="#price-section">Наші ціни</a></li>
+          <li><a href="#video-receipt-section">Рецепти</a></li>
+          <li><a href="#feedback-section">Контакти</a></li>
         </ul>
       </nav>
       <button type="button">Замовити дзвінок</button>
+      <audio controls>
+        <source src="./media/suzanne_vega_caramel.mp3" />
+      </audio>
     </header>
     <main>
       <!-- Section 1 -->
@@ -28,7 +33,7 @@
       </section>
 
       <!-- Section 2 -->
-      <section id="traditions">
+      <section id="traditions-section">
         <ul>
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
@@ -51,7 +56,7 @@
       </section>
 
       <!-- Section 3 -->
-      <section id="chefs">
+      <section id="chefs-section">
         <h2>Наші найкращі шеф-кухарі</h2>
         <ul>
           <li>
@@ -62,7 +67,10 @@
               <p>Я випічу для вас найсмачніщі вироби!</p>
             </article>
           </li>
-          <img src="./images/nastia.jpg" alt="Пекар Настя з круасаном" />
+        </ul>
+
+        <img src="./images/nastia.jpg" alt="Пекар Настя з круасаном" />
+        <ul>
           <li>
             <article>
               <h3>Влад</h3>
@@ -74,12 +82,12 @@
               <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
             </article>
           </li>
-          <img src="./images/vlad.jpg" alt="Пекар Влад розкатує тісто" />
         </ul>
+        <img src="./images/vlad.jpg" alt="Пекар Влад розкатує тісто" />
       </section>
 
       <!-- Section 4 -->
-      <section id="formats">
+      <section id="formats-section">
         <h2>Формати</h2>
         <ul>
           <li>
@@ -116,8 +124,114 @@
       </section>
 
       <!-- Section 5 -->
-      <section id="feedback">
+      <section id="price-section">
+        <h2>Найнижчі ціни на найсмачнішу випічку</h2>
+        <table>
+          <caption>
+            <b>Ціни на наші хлібобулочні вироби</b>
+          </caption>
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>Назва виробу</th>
+              <th>Вага, г</th>
+              <th>Ціна, грн.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Багети з добавками</td>
+              <td>350</td>
+              <td>29.70</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Пончики без начинки</td>
+              <td>130</td>
+              <td>17.90</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Пончики з начинкою</td>
+              <td>160</td>
+              <td>23.60</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Тарталетки</td>
+              <td>85</td>
+              <td>10.80</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Чіабата</td>
+              <td>240</td>
+              <td>19.90</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Булочки для французького хот дога</td>
+              <td rowspan="2">130</td>
+              <td>16.90</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Булочки для бургерів</td>
+              <!-- <td>130</td> -->
+              <td>14.30</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Хліб тостовий</td>
+              <td>560</td>
+              <td>32.50</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Круасани</td>
+              <td>150</td>
+              <td>18.70</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Ролліні</td>
+              <td>260</td>
+              <td>22.20</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="video-receipt-section">
+        <h2>Рецепти смаколиків</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/NiXy0n7Cs6s?si=dpgJaKkZ6j349qD5"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <video controls autoplay muted width="600" height="300">
+          <source src="./media/bread_receipt_easy.mp4" type="video/mp4" />
+          <source src="./media/bread_receipt_easy.webm" type="video/webm" />
+        </video>
+      </section>
+
+      <!-- Section 7 -->
+      <section id="feedback-section">
         <h2>Приєднуйся до мережі пекарень</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1634470361714!2d30.48869837691709!3d50.45668098691467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1763499824754!5m2!1sru!2sua"
+          width="603"
+          height="595"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
 
@@ -128,10 +242,12 @@
           <img src="./images/logo.svg" alt="Логотип Сучасної пекарні" />
         </a>
         <ul>
-          <li><a href="#traditions">Наші традиції</a></li>
-          <li><a href="#chefs">Шеф-кухарі</a></li>
-          <li><a href="#formats">Формати</a></li>
-          <li><a href="#feedback">Контакти</a></li>
+          <li><a href="#traditions-section">Наші традиції</a></li>
+          <li><a href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a href="#formats-section">Формати</a></li>
+          <li><a href="#price-section">Наші ціни</a></li>
+          <li><a href="#video-receipt-section">Рецепти</a></li>
+          <li><a href="#feedback-section">Контакти</a></li>
         </ul>
       </nav>
       <address>
@@ -163,7 +279,7 @@
           </li>
         </ul>
         <a href="#" target="_blank">Політика конфіденційност</a>
-        <p>© 2025 Дані захищені</p>
+        <p>&copy; 2025 Дані захищені</p>
       </address>
     </footer>
   </body>
